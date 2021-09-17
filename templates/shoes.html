@@ -1,3 +1,4 @@
+{%load staticfiles%}
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -8,25 +9,25 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Shoes</title>
+      <title>ACCESORIAS PARA MASCOTAS</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
       <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="{%static 'css/style.css'%}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="{%static 'css/responsive.css'%}">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="{%static 'images/fevicon.png'%}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{%static 'css/jquery.mCustomScrollbar.min.css'%}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- owl stylesheets --> 
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="{%static 'css/owl.carousel.min.css'%}">
+      <link rel="stylesheet" href="{%static 'css/owl.theme.default.min.css'%}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -39,7 +40,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+					<div class="logo"><a href="#"><img src="{%static 'images/logo.png'%}"></a></div>
 				</div>
 				<div class="col-sm-9">
 					<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -48,13 +49,13 @@
                         </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                           <a class="nav-item nav-link" href="index.html">Home</a>
-                           <a class="nav-item nav-link" href="collection.html">Collection</a>
-                           <a class="nav-item nav-link" href="shoes.html">Shoes</a>
-                           <a class="nav-item nav-link" href="racing boots.html">Racing Boots</a>
-                           <a class="nav-item nav-link" href="contact.html">Contact</a>
-                           <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
-                           <a class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
+                            <a class="nav-item nav-link" href="{%url 'tienda:Tienda'%}">Home</a>
+                           <a class="nav-item nav-link" href="{%url 'tienda:collection'%}">Collection</a>
+                           <a class="nav-item nav-link" href="{%url 'tienda:shoes'%}">Shoes</a>
+                           <a class="nav-item nav-link" href="{%url 'tienda:racingboots'%}">Racing Boots</a>
+                           <a class="nav-item nav-link" href="{%url 'tienda:contact'%}">Contact</a>
+                           <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png'%}"></a>
+                           <a class="nav-item nav-link last" href="{%static 'contact.html'%}"><img src="{%static 'images/shop_icon.png'%}"></a>
                         </div>
                     </div>
                     </nav>
@@ -66,8 +67,8 @@
   <div class="collection_text">Shoes</div>
     <div class="collection_section layout_padding">
     	<div class="container">
-    		<h1 class="new_text"><strong>New Arrivals Products</strong></h1>
-    	    <p class="consectetur_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+    		<h1 class="new_text"><strong>JUGUETES</strong></h1>
+    	    <p class="consectetur_text">Juega con tus mascotas esto les ayuda a que se quiten el estres</p>
     	</div>
     </div>
     <div class="layout_padding gallery_section">
@@ -75,60 +76,47 @@
     		<div class="row">
     			<div class="col-sm-4">
     				<div class="best_shoes">
-    					<p class="best_text">Best Shoes </p>
-    					<div class="shoes_icon"><img src="images/shoes-img4.png"></div>
+    					<p class="best_text">Pelota</p>
+    					<div class="shoes_icon"><img src="https://i.postimg.cc/wTMmhLxj/pelota.jpg"whith="300" height="200"></div>
     					<div class="star_text">
     						<div class="left_part">
     							<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
+
     	    					</ul>
     						</div>
     						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">60</span></div>
+    							<div class="shoes_price"><span style="color: #ff4e5b;"></span></div>
     						</div>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm-4">
     				<div class="best_shoes">
-    					<p class="best_text">Best Shoes </p>
-    					<div class="shoes_icon"><img src="images/shoes-img5.png"></div>
+    					<p class="best_text">Rascador</p>
+    					<div class="shoes_icon"><img src="https://i.postimg.cc/Jhxr6YPV/rascador.jpg"whith="300" height="200"></div>
     					<div class="star_text">
     						<div class="left_part">
     							<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
     	    					</ul>
     						</div>
     						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">400</span></div>
+    							<div class="shoes_price"><span style="color: #ff4e5b;"></span></div>
     						</div>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm-4">
     				<div class="best_shoes">
-    					<p class="best_text">Best Shoes </p>
-    					<div class="shoes_icon"><img src="images/shoes-img6.png"></div>
+    					<p class="best_text">Jueguete de Goma </p>
+    					<div class="shoes_icon"><img src="https://i.postimg.cc/vZzTkmZN/goma.jpg" whith="300" height="200"></div>
     					<div class="star_text">
     						<div class="left_part">
     							<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
+
     	    					</ul>
     						</div>
     						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">50</span></div>
+    							<div class="shoes_price"> <span style="color: #ff4e5b;"></span></div>
     						</div>
     					</div>
     				</div>
@@ -137,60 +125,47 @@
     		<div class="row">
     			<div class="col-sm-4">
     				<div class="best_shoes">
-    					<p class="best_text">Sports Shoes</p>
-    					<div class="shoes_icon"><img src="images/shoes-img7.png"></div>
+    					<p class="best_text">Hueso de goma</p>
+    					<div class="shoes_icon"><img src="https://i.postimg.cc/xTP9T4Vk/goma2.jpg" whith="200" height="200"></div>
     					<div class="star_text">
     						<div class="left_part">
     							<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
+
     	    					</ul>
     						</div>
     						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">70</span></div>
+    							<div class="shoes_price"><span style="color: #ff4e5b;"></span></div>
     						</div>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm-4">
     				<div class="best_shoes">
-    					<p class="best_text">Sports Shoes</p>
-    					<div class="shoes_icon"><img src="images/shoes-img8.png"></div>
+    					<p class="best_text">Mishi</p>
+    					<div class="shoes_icon"><img src="https://i.postimg.cc/qqV3cMwM/mishi.jpg" whith="300" height="200"></div>
     					<div class="star_text">
     						<div class="left_part">
     							<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
     	    					</ul>
     						</div>
     						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">100</span></div>
+    							<div class="shoes_price"><span style="color: #ff4e5b;"></span></div>
     						</div>
     					</div>
     				</div>
     			</div>
     			<div class="col-sm-4">
     				<div class="best_shoes">
-    					<p class="best_text">Sports Shoes</p>
-    					<div class="shoes_icon"><img src="images/shoes-img9.png"></div>
+    					<p class="best_text">Mucho mas</p>
+    					<div class="shoes_icon"><img src="https://i.postimg.cc/GhjXpZ3s/masju.jpg"whith="300" height="200"></div>
     					<div class="star_text">
     						<div class="left_part">
     							<ul>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
-    	    						<li><a href="#"><img src="images/star-icon.png"></a></li>
+
     	    					</ul>
     						</div>
     						<div class="right_part">
-    							<div class="shoes_price">$ <span style="color: #ff4e5b;">90</span></div>
+    							<div class="shoes_price"><span style="color: #ff4e5b;"></span></div>
     						</div>
     					</div>
     				</div>
@@ -208,21 +183,21 @@
     		<div class="mail_section">
     			<div class="row">
     				<div class="col-sm-6 col-lg-2">
-    					<div><a href="#"><img src="images/footer-logo.png"></a></div>
+    					<div><a href="#"><img src="{%static 'images/footer-logo.png'%}"></a></div>
     				</div>
     				<div class="col-sm-6 col-lg-2">
-    					<div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">(71) 1234567890</span></div>
+    					<div class="footer-logo"><img src="{%static 'images/phone-icon.png'%}"><span class="map_text">(71) 1234567890</span></div>
     				</div>
     				<div class="col-sm-6 col-lg-3">
-    					<div class="footer-logo"><img src="images/email-icon.png"><span class="map_text">Demo@gmail.com</span></div>
+    					<div class="footer-logo"><img src="{%static 'images/email-icon.png'%}"><span class="map_text">Demo@gmail.com</span></div>
     				</div>
     				<div class="col-sm-6 col-lg-3">
     					<div class="social_icon">
     						<ul>
-    							<li><a href="#"><img src="images/fb-icon.png"></a></li>
-    							<li><a href="#"><img src="images/twitter-icon.png"></a></li>
-    							<li><a href="#"><img src="images/in-icon.png"></a></li>
-    							<li><a href="#"><img src="images/google-icon.png"></a></li>
+    							<li><a href="#"><img src="{%static 'images/fb-icon.png'%}"></a></li>
+    							<li><a href="#"><img src="{%static 'images/twitter-icon.png'%}"></a></li>
+    							<li><a href="#"><img src="{%static 'images/in-icon.png'%}"></a></li>
+    							<li><a href="#"><img src="{%static 'images/google-icon.png'%}"></a></li>
     						</ul>
     					</div>
     				</div>
@@ -236,7 +211,7 @@
     		        </div>
     		        <div class="col-sm-4 col-lg-2">
     		        	<h2 class="shop_text">Address </h2>
-    		        	<div class="image-icon"><img src="images/map-icon.png"><span class="pet_text">No 40 Baria Sreet 15/2 NewYork City, NY, United States.</span></div>
+    		        	<div class="image-icon"><img src="{%static 'images/map-icon.png'%}"><span class="pet_text">No 40 Baria Sreet 15/2 NewYork City, NY, United States.</span></div>
     		        </div>
     		        <div class="col-sm-4 col-md-6 col-lg-3">
     				    <h2 class="shop_text">Our Company </h2>
@@ -279,16 +254,16 @@
 
 
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="{%static 'js/jquery.min.js'%}"></script>
+      <script src="{%static 'js/popper.min.js'%}"></script>
+      <script src="{%static 'js/bootstrap.bundle.min.js'%}"></script>
+      <script src="{%static 'js/jquery-3.0.0.min.js'%}"></script>
+      <script src="{%static 'js/plugin.js'%}"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="{%static 'js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
+      <script src="{%static 'js/custom.js'%}"></script>
       <!-- javascript --> 
-      <script src="js/owl.carousel.js"></script>
+      <script src="{%static 'js/owl.carousel.js'%}"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
       <script>
          $(document).ready(function(){
